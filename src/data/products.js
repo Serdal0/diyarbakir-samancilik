@@ -1,0 +1,40 @@
+const products = [
+  {
+    id: "bugday",
+    name: "Buğday Kelle Samanı",
+    emoji: "🌾",
+    color: "#C8A96E",
+    accent: "#8B6914",
+    description: "Buğday samanı, hasat sonrası buğday bitkisinin saplarından elde edilen doğal bir yem kaynağıdır. Lifli yapısıyla hayvanların sindirim sistemini düzenler ve kış aylarında önemli bir kaba yem alternatifi sunar.",
+    features: ["Yüksek lif içeriği", "Doğal ve katkısız", "Hijyenik paketleme", "Uzun raf ömrü"],
+    detail: "Diyarbakır ovasının bereketli topraklarından toplanan buğday sapları, özenle işlenerek balyalanmaktadır. Büyükbaş ve küçükbaş hayvancılık için idealdir.",
+    bgImage: "/bugday.jpeg",
+    icon: "🌾",
+  },
+  {
+    id: "arpa",
+    name: "Arpa Kelle Samanı",
+    emoji: "🌿",
+    color: "#A8C76E",
+    accent: "#4A7A14",
+    description: "Arpa samanı, buğday samanına kıyasla daha yumuşak bir yapıya sahip olup protein oranı görece daha yüksektir. Sindirimi kolay olan bu yem, özellikle genç hayvanlar ve süt verimliliğini artırmak için tercih edilir.",
+    features: ["Yumuşak lifli yapı", "Protein açısından zengin", "Kolay sindirim", "At ve inek beslenmesi için ideal"],
+    detail: "Güneydoğu Anadolu'nun verimli tarım arazilerinden elde edilen arpa samanı, modern presleme teknolojisiyle sıkıştırılarak teslim edilmektedir.",
+    bgImage: "arpa.jpg",
+    icon: "🌿",
+  },
+  {
+    id: "mercimek",
+    name: "Mercimek Samanı",
+    emoji: "🟤",
+    color: "#C87E6E",
+    accent: "#8B3014",
+    description: "Mercimek samanı, baklagil ailesinden gelmesi nedeniyle diğer samanlara göre protein oranı en yüksek olan çeşididir. Hayvanların kas gelişimine katkı sağlar ve kışlık yemleme programlarının vazgeçilmezi olarak öne çıkar.",
+    features: ["En yüksek protein oranı", "Baklagil kökenli", "Kas gelişimini destekler", "Premium kalite"],
+    detail: "Diyarbakır ve çevre illerde yetiştirilen mercimek hasadından elde edilen saman, titiz kalite kontrolünden geçirilerek müşterilerimize sunulmaktadır.",
+    bgImage: "mercimek.jpg",
+    icon: "🟤",
+  },
+];
+
+export default products;
