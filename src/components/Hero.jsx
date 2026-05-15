@@ -7,11 +7,12 @@ export default function Hero({ heroVisible, onProductsClick, onOrderClick }) {
       <div className={`hero-content${heroVisible ? " visible" : ""}`}>
         <div className="hero-badge">Diyarbakır · Güneydoğu Anadolu</div>
         <h1 className="hero-title">
-          Adrese Teslim <br /><span>Diyarbakır</span><br />Samanı
+        Adrese Teslim <br /><span>Diyarbakır</span><br />Pres Samanı
         </h1>
         <p className="hero-sub">
-          Türkiyenin 81 iline Diyarbakır'ın bereketli Tarlalarından toplanan en kaliteli samanları,
-          güvenilir ve hızlı teslimatla müşterilerimize buluşturuyoruz.
+          - Stoklar bitmeden sipariş verin -<br /> aracı olmadan, doğrudan üreticiden pres saman,
+          <strong> 1-3 gün içinde</strong> kapınızda. Toptan alımlarda özel fiyat,
+          Türkiye'nin 81 iline hızlı teslimat.
         </p>
         <div className="hero-cta">
 

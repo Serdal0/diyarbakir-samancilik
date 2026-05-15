@@ -5,8 +5,9 @@ import Navbar       from "./components/Navbar";
 import Hero         from "./components/Hero";
 import Products     from "./components/Products";
 import ProductModal from "./components/ProductModal";
-import About        from "./components/About";
-import Order        from "./components/Order";
+import About          from "./components/About";
+import DeliveryRegions from "./components/DeliveryRegions";
+import Order          from "./components/Order";
 import Footer       from "./components/Footer";
 
 export default function App() {
@@ -43,6 +44,7 @@ export default function App() {
       />
       <Products onProductClick={setActiveProduct} />
       <About />
+      <DeliveryRegions />
       <div className="section-divider" />
       <Order orderRef={orderRef} defaultProduct={selectedProduct} />
       <Footer />

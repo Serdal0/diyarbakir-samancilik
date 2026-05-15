@@ -101,6 +101,55 @@ body { overflow-x: hidden; }
 .about-value-text h4 { color: #C8A96E; font-size: 0.9rem; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 4px; }
 .about-value-text p { font-family: 'Crimson Pro', serif; color: #807050; font-size: 0.9rem; margin-top: 0; }
 
+/* DELIVERY REGIONS */
+.delivery-section { background: #0f0d08; }
+
+.delivery-hero { position: relative; height: 440px; overflow: hidden; }
+.delivery-hero-img { width: 100%; height: 100%; object-fit: cover; object-position: center 60%; filter: brightness(0.28) saturate(0.6); }
+.delivery-hero-overlay { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 40px 20px; }
+.delivery-hero-title { font-size: 2.8rem; font-weight: 900; color: #f0e8d5; margin: 12px 0 36px; line-height: 1.2; }
+.delivery-hero-title span { color: #C8A96E; }
+
+.delivery-stats-row { display: flex; align-items: center; gap: 40px; }
+.delivery-stat { text-align: center; }
+.delivery-stat-num { display: block; font-size: 2.6rem; font-weight: 900; color: #C8A96E; line-height: 1; }
+.delivery-stat-label { font-family: 'Crimson Pro', serif; font-size: 0.75rem; letter-spacing: 3px; text-transform: uppercase; color: #a09070; margin-top: 6px; display: block; }
+.delivery-stat-sep { width: 1px; height: 52px; background: rgba(200,169,110,0.25); }
+
+.delivery-body { max-width: 1100px; margin: 0 auto; padding: 60px 40px; }
+
+.delivery-accordion { display: flex; flex-direction: column; gap: 6px; }
+.delivery-region { border: 1px solid rgba(200,169,110,0.12); background: rgba(200,169,110,0.02); transition: border-color 0.25s; }
+.delivery-region.open { border-color: rgba(200,169,110,0.35); background: rgba(200,169,110,0.04); }
+
+.delivery-region-header { width: 100%; display: flex; align-items: center; justify-content: space-between; padding: 20px 28px; background: transparent; border: none; cursor: pointer; color: inherit; font-family: inherit; transition: background 0.2s; }
+.delivery-region-header:hover { background: rgba(200,169,110,0.05); }
+.delivery-region.open .delivery-region-header { background: rgba(200,169,110,0.06); }
+
+.delivery-region-header-left { display: flex; align-items: center; gap: 20px; }
+.delivery-region-name { font-size: 1rem; font-weight: 700; color: #f0e8d5; letter-spacing: 1.5px; text-transform: uppercase; }
+.delivery-region-tag { font-family: 'Crimson Pro', serif; font-size: 0.82rem; color: #C8A96E; background: rgba(200,169,110,0.08); padding: 3px 12px; border: 1px solid rgba(200,169,110,0.2); }
+
+.delivery-chevron { color: #C8A96E; font-size: 0.7rem; transition: transform 0.35s ease; display: inline-block; }
+.delivery-chevron.up { transform: rotate(180deg); }
+
+.delivery-region-body { max-height: 0; overflow: hidden; transition: max-height 0.45s ease; }
+.delivery-region.open .delivery-region-body { max-height: 3000px; }
+
+.delivery-city-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 10px; padding: 4px 24px 28px; }
+.delivery-city-card { background: rgba(200,169,110,0.04); border-left: 2px solid rgba(200,169,110,0.25); padding: 12px 16px; }
+.delivery-city-name { font-size: 0.78rem; font-weight: 700; color: #C8A96E; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 5px; }
+.delivery-city-name-link { display: block; font-size: 0.78rem; font-weight: 700; color: #C8A96E; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 5px; text-decoration: none; transition: color 0.2s; }
+.delivery-city-name-link:hover { color: #e0bf7e; text-decoration: underline; }
+.delivery-city-districts { font-family: 'Crimson Pro', serif; font-size: 0.88rem; color: #807050; line-height: 1.6; }
+.delivery-district-link { color: #907050; text-decoration: none; transition: color 0.15s; }
+.delivery-district-link:hover { color: #C8A96E; text-decoration: underline; }
+
+.delivery-footer-banner { position: relative; margin-top: 60px; height: 280px; overflow: hidden; }
+.delivery-footer-img { width: 100%; height: 100%; object-fit: cover; object-position: center 30%; filter: brightness(0.25) saturate(0.5); }
+.delivery-footer-overlay { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; padding: 20px; }
+.delivery-footer-overlay p { font-family: 'Crimson Pro', serif; font-size: 1.4rem; color: #a09070; text-align: center; font-style: italic; letter-spacing: 1px; max-width: 600px; line-height: 1.8; }
+
 /* ORDER */
 .order-section { padding: 100px 40px; background: #0a0906; }
 .order-inner { max-width: 900px; margin: 0 auto; }
@@ -158,6 +207,17 @@ textarea.form-control { resize: vertical; min-height: 100px; }
   .products-section { padding: 60px 16px; }
   .about-section { padding: 60px 16px; }
   .order-section { padding: 60px 16px; }
+  .delivery-hero { height: 320px; }
+  .delivery-hero-title { font-size: 1.7rem; }
+  .delivery-stat-num { font-size: 1.8rem; }
+  .delivery-stats-row { gap: 20px; }
+  .delivery-stat-sep { height: 36px; }
+  .delivery-body { padding: 36px 16px; }
+  .delivery-city-grid { grid-template-columns: 1fr; }
+  .delivery-region-header { padding: 16px; }
+  .delivery-region-header-left { flex-wrap: wrap; gap: 8px; }
+  .delivery-footer-banner { height: 200px; }
+  .delivery-footer-overlay p { font-size: 1.1rem; }
   .footer { padding: 0 0 20px; }
   .footer-map-label { padding: 10px 16px; font-size: 0.8rem; }
   .footer-map iframe { height: 220px; }
@@ -168,6 +228,93 @@ html, body {
   width: 100%;
   max-width: 100%;
   overflow-x: hidden;
+}
+
+/* ═══════════════════════════════════════════════════
+   CITY PAGE — Şehir Landing Sayfaları
+═══════════════════════════════════════════════════ */
+.city-page { background: #0f0d08; color: #f0e8d5; min-height: 100vh; font-family: 'Playfair Display', serif; }
+
+/* Nav */
+.city-nav { display: flex; align-items: center; justify-content: space-between; padding: 16px 40px; border-bottom: 1px solid rgba(200,169,110,0.15); background: rgba(15,13,8,0.95); position: sticky; top: 0; z-index: 100; }
+.city-nav-logo { text-decoration: none; display: flex; flex-direction: column; line-height: 1.1; }
+.city-nav-logo-main { font-size: 1.1rem; font-weight: 900; color: #C8A96E; letter-spacing: 3px; text-transform: uppercase; }
+.city-nav-logo-sub { font-size: 0.55rem; letter-spacing: 4px; color: #806040; text-transform: uppercase; font-family: 'Crimson Pro', serif; }
+.city-nav-phone { color: #C8A96E; text-decoration: none; font-family: 'Crimson Pro', serif; font-size: 1rem; letter-spacing: 1px; border: 1px solid rgba(200,169,110,0.3); padding: 8px 18px; transition: all 0.2s; }
+.city-nav-phone:hover { background: rgba(200,169,110,0.1); }
+
+/* Hero */
+.city-hero { position: relative; min-height: 420px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+.city-hero-bg { position: absolute; inset: 0; background: linear-gradient(135deg, #1a1204 0%, #0f0d08 60%, #12100a 100%); }
+.city-hero-bg::after { content: "SAMAN"; position: absolute; right: -20px; bottom: -40px; font-size: 22vw; font-weight: 900; color: rgba(200,169,110,0.04); line-height: 1; pointer-events: none; }
+.city-hero-content { position: relative; text-align: center; padding: 80px 24px 60px; max-width: 800px; }
+.city-hero-tag { font-family: 'Crimson Pro', serif; font-size: 0.8rem; letter-spacing: 4px; text-transform: uppercase; color: #C8A96E; }
+.city-hero-title { font-size: 3.5rem; font-weight: 900; line-height: 1.1; margin: 16px 0 12px; color: #f0e8d5; }
+.city-hero-title span { color: #C8A96E; }
+.city-hero-subtitle { font-family: 'Crimson Pro', serif; font-size: 1.1rem; color: #a09070; margin-bottom: 36px; }
+.city-hero-ctas { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+.city-btn-primary { background: #C8A96E; color: #0f0d08; padding: 16px 32px; text-decoration: none; font-size: 0.9rem; font-weight: 700; letter-spacing: 1px; transition: all 0.2s; white-space: nowrap; }
+.city-btn-primary:hover { background: #e0bf7e; transform: translateY(-2px); }
+.city-btn-secondary { background: #25D366; color: #fff; padding: 16px 32px; text-decoration: none; font-size: 0.9rem; font-weight: 700; letter-spacing: 1px; transition: all 0.2s; white-space: nowrap; }
+.city-btn-secondary:hover { background: #20c45a; transform: translateY(-2px); }
+
+/* Bölümler */
+.city-section-inner { max-width: 1100px; margin: 0 auto; padding: 80px 40px; }
+.city-section-title { font-size: 2rem; font-weight: 900; color: #f0e8d5; margin-bottom: 40px; }
+.city-section-title::after { content: ''; display: block; width: 60px; height: 2px; background: #C8A96E; margin-top: 12px; }
+
+/* Ürünler */
+.city-products { background: #12100a; }
+.city-product-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.city-product-card { border: 1px solid rgba(200,169,110,0.15); overflow: hidden; }
+.city-product-img { width: 100%; height: 200px; object-fit: cover; filter: brightness(0.8) saturate(0.7); }
+.city-product-info { padding: 20px; }
+.city-product-info h3 { font-size: 1rem; font-weight: 700; color: #C8A96E; letter-spacing: 1px; margin-bottom: 8px; }
+.city-product-info p { font-family: 'Crimson Pro', serif; color: #807050; font-size: 0.9rem; line-height: 1.6; margin-bottom: 16px; }
+.city-product-cta { display: inline-block; background: transparent; border: 1px solid rgba(200,169,110,0.4); color: #C8A96E; padding: 8px 20px; text-decoration: none; font-size: 0.8rem; letter-spacing: 2px; text-transform: uppercase; transition: all 0.2s; }
+.city-product-cta:hover { background: rgba(200,169,110,0.1); }
+
+/* İlçeler */
+.city-coverage { background: #0f0d08; }
+.city-coverage-intro { font-family: 'Crimson Pro', serif; color: #a09070; font-size: 1.05rem; margin-bottom: 28px; margin-top: -24px; }
+.city-district-grid { display: flex; flex-wrap: wrap; gap: 10px; }
+.city-district-chip { background: rgba(200,169,110,0.07); border: 1px solid rgba(200,169,110,0.2); color: #C8A96E; padding: 8px 16px; font-family: 'Crimson Pro', serif; font-size: 0.88rem; }
+
+/* Neden biz */
+.city-why { background: #12100a; }
+.city-why-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.city-why-card { padding: 28px 20px; border-left: 2px solid rgba(200,169,110,0.25); }
+.city-why-icon { font-size: 2rem; display: block; margin-bottom: 12px; }
+.city-why-card h3 { font-size: 0.85rem; font-weight: 700; color: #C8A96E; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 8px; }
+.city-why-card p { font-family: 'Crimson Pro', serif; color: #807050; font-size: 0.9rem; line-height: 1.6; }
+
+/* Yakın şehirler */
+.city-nearby { background: #0f0d08; }
+.city-nearby-grid { display: flex; flex-wrap: wrap; gap: 10px; }
+.city-nearby-link { background: rgba(200,169,110,0.05); border: 1px solid rgba(200,169,110,0.15); color: #a09070; padding: 10px 20px; text-decoration: none; font-family: 'Crimson Pro', serif; font-size: 0.9rem; transition: all 0.2s; }
+.city-nearby-link:hover { border-color: rgba(200,169,110,0.4); color: #C8A96E; background: rgba(200,169,110,0.08); }
+
+/* Alt CTA */
+.city-bottom-cta { background: linear-gradient(135deg, #1a1508 0%, #0f0d08 100%); border-top: 1px solid rgba(200,169,110,0.15); text-align: center; padding: 80px 40px; }
+.city-bottom-cta h2 { font-size: 2rem; font-weight: 900; color: #f0e8d5; margin-bottom: 16px; }
+.city-bottom-cta p { font-family: 'Crimson Pro', serif; color: #a09070; font-size: 1.05rem; margin-bottom: 36px; }
+
+/* Footer */
+.city-footer { background: #0a0906; border-top: 1px solid rgba(200,169,110,0.1); padding: 32px 40px; display: flex; justify-content: space-between; align-items: center; font-family: 'Crimson Pro', serif; }
+.city-footer-home { color: #C8A96E; text-decoration: none; font-size: 0.9rem; letter-spacing: 1px; }
+.city-footer-home:hover { text-decoration: underline; }
+.city-footer p { color: #403020; font-size: 0.8rem; }
+
+/* City Page Responsive */
+@media (max-width: 768px) {
+  .city-nav { padding: 12px 16px; }
+  .city-hero-title { font-size: 2.2rem; }
+  .city-section-inner { padding: 50px 16px; }
+  .city-product-grid { grid-template-columns: 1fr; }
+  .city-why-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+  .city-footer { flex-direction: column; gap: 12px; text-align: center; padding: 24px 16px; }
+  .city-bottom-cta { padding: 60px 16px; }
+  .city-bottom-cta h2 { font-size: 1.5rem; }
 }
 
 #root {

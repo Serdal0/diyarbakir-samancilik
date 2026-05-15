@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Copy-Item \"C:\\\\Users\\\\SERDAL\\\\Desktop\\\\WhatsApp Image 2026-05-15 at 16.48.54.jpeg\" \"C:\\\\Users\\\\SERDAL\\\\Desktop\\\\diyarbakir-samancilik\\\\public\\\\truck1.jpeg\" -Force)",
+      "Bash(Copy-Item \"C:\\\\Users\\\\SERDAL\\\\Desktop\\\\WhatsApp Image 2026-05-15 at 16.50.25.jpeg\" \"C:\\\\Users\\\\SERDAL\\\\Desktop\\\\diyarbakir-samancilik\\\\public\\\\truck2.jpeg\" -Force)",
+      "Bash(Write-Output \"Copied\")",
+      "Bash(cp \"/mnt/c/Users/SERDAL/Desktop/WhatsApp Image 2026-05-15 at 16.48.54.jpeg\" \"/mnt/c/Users/SERDAL/Desktop/diyarbakir-samancilik/public/truck1.jpeg\")",
+      "Bash(cp \"/mnt/c/Users/SERDAL/Desktop/WhatsApp Image 2026-05-15 at 16.50.25.jpeg\" \"/mnt/c/Users/SERDAL/Desktop/diyarbakir-samancilik/public/truck2.jpeg\")"
+    ]
+  }
+}

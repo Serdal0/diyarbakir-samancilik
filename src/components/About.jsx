@@ -14,8 +14,10 @@ export default function About() {
         <div className="about-text">
           <span className="section-tag">— Biz Kimiz —</span>
           <h2 className="section-title">Güven ve <span>Kalitenin</span> Adresi</h2>
-          <p>  Türkiye'nin tüm illerine Kapıya teslimat yapıyoruz: Ankara Saman, Ardahan Saman, Göle Saman, Erzurum Saman, Oltu Saman, Pasinler Saman, 
-  Malatya Saman, Rize Saman, Kars Saman, Hakkari Saman, Cizre Saman, Yüksekova Saman, Iğdır Saman, Tabzon Saman, Malatya Saman, Diyarbakır Saman, Karaman Saman, Muş Saman, Kırıkkale Saman, Sivas Saman, Kastamonu Saman,Tatvan Saman, Patnos Saman, Ağrı Saman, Kağızman Saman, Hanak Saman, Digor Saman, Selim Saman, Sarıkamış Saman, Horasan Saman, Şenkaya Saman, Arpaçay Saman ve daha fazlası</p>
+          <p>Pres saman ve buğday samanı satın almak için doğru adrestesiniz. Pres buğday samanı, pres arpa samanı ve mercimek samanını uygun fiyatlarla kapınıza teslim ediyoruz.</p>
+          <p style={{marginTop: "0.75rem"}}>
+            Doğu Anadolu'dan Karadeniz'e, Güneydoğu'dan Türkiye'nin dört bir yanına 81 il ve 500'den fazla ilçeye kapıya teslimat yapıyoruz.
+          </p>
           <div className="about-values">
             <div className="about-value">
               <div className="about-value-icon">🌱</div>

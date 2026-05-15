@@ -6,7 +6,7 @@ export default function Products({ onProductClick }) {
     <section id="urunler" className="products-section">
       <div className="section-header">
         <span className="section-tag">— Ürün Kataloğumuz —</span>
-        <h2 className="section-title"><span>Kapıya Teslim</span><br />Hızlı Teslimat</h2>
+        <h2 className="section-title"><span>Kapıya Teslim</span><br />Pres Samanı</h2>
         <p className="section-desc">Her saman türü, farklı hayvan besleme ihtiyaçlarına özel özellikleriyle dikkat çeker.</p>
       </div>
       <div className="products-grid">
