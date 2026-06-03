@@ -45,7 +45,7 @@ function toSlug(name) {
 }
 
 export default function DeliveryRegions() {
-  const [openId, setOpenId] = useState(null);
+  const [openId, setOpenId] = useState("dogu");
   const toggle = (id) => setOpenId(openId === id ? null : id);
 
   return (
